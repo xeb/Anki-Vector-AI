@@ -1,0 +1,2 @@
+tensorflow
+anki_vector
