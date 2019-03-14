@@ -1,11 +1,11 @@
 
 # Anki Vector Object Detection
-This is a fork of [github.com/unbun/Anki-Vector-AI](https://github.com/unbug/Anki-Vector-AI) but instead of using Google Cloud Services, it uses a **local ImageNet TensorFlow** model.
+This is a fork of [github.com/unbun/Anki-Vector-AI](https://github.com/unbug/Anki-Vector-AI) but instead of using Google Cloud Services, it uses a **local Inception TensorFlow** model.
 
 # Object detection with Vector
 This program is to enable Vector to detect objects with its camera, and tell us what it found. 
 
-We take a photo from Vector's camera, infer labels using the pre-downloaded ImageNet model, then finally, we turn all the label text into a sentence along with the probability and send to Vector so that Vector can say it out loud.
+We take a photo from Vector's camera, infer labels using the pre-downloaded Inception model, then finally, we turn all the label text into a sentence along with the probability and send to Vector so that Vector can say it out loud.
 
 Admittedly, this is not anywhere near as good as the original. But it also doesn't upload your images and instead runs the inference locally, so there's that.
 
@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ./download_model.sh
 ```
 5. Make sure your computer and Vector in the same WiFi network. Then run `python3 object_detection.py`.
-6. If you are lucky, Vector will start the first object detection, and start speaking the labels of what it sees. It's much more hilarious than the original given the ImageNet model.
+6. If you are lucky, Vector will start the first object detection, and start speaking the labels of what it sees. It's much more hilarious than the original given the Inception model.
 
 ### How it works
 Read the code, or checkout the original [README](https://github.com/unbug/Anki-Vector-AI) which is mostly the same.

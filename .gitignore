@@ -23,3 +23,6 @@ pids
 logs
 
 resources/latest.jpg
+
+__pycache__/
+imagenet_slim_labels.txt
